@@ -32,7 +32,7 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Usuario
         private void btn_salir_Click(object sender, EventArgs e)
         {
             //Cerrar el programa
-            this.Dispose();
+            Application.Exit();
         }
 
         private void btn_inicio_s_Click(object sender, EventArgs e)

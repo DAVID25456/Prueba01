@@ -16,5 +16,15 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Usuario
         {
             InitializeComponent();
         }
+
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            //Termina el proceso
+            //Vuelve al formulario de inicio de sesion
+            InicioSecion inicioSecion = new InicioSecion();
+            //this.SuspendLayout();
+            this.Hide();
+            inicioSecion.Show();
+        }
     }
 }

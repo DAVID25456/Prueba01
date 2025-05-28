@@ -45,6 +45,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.btn_cancelar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,7 +53,7 @@
             // btn_registro
             // 
             this.btn_registro.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_registro.Location = new System.Drawing.Point(811, 270);
+            this.btn_registro.Location = new System.Drawing.Point(808, 245);
             this.btn_registro.Name = "btn_registro";
             this.btn_registro.Size = new System.Drawing.Size(195, 42);
             this.btn_registro.TabIndex = 8;
@@ -117,9 +118,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(811, 35);
+            this.pictureBox1.Location = new System.Drawing.Point(820, 30);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(195, 225);
+            this.pictureBox1.Size = new System.Drawing.Size(171, 209);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -203,11 +204,23 @@
             this.comboBox2.Size = new System.Drawing.Size(451, 37);
             this.comboBox2.TabIndex = 17;
             // 
+            // btn_cancelar
+            // 
+            this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelar.Location = new System.Drawing.Point(808, 293);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.Size = new System.Drawing.Size(195, 42);
+            this.btn_cancelar.TabIndex = 9;
+            this.btn_cancelar.Text = "Cancelar";
+            this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
+            // 
             // Informacion_personal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1042, 360);
+            this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_registro);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
@@ -237,5 +250,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button btn_cancelar;
     }
 }

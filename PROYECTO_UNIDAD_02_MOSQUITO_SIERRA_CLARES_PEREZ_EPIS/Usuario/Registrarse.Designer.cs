@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registrarse));
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_siguiente = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -42,20 +42,21 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.btn_cerrar = new System.Windows.Forms.Button();
+            this.btn_atras = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btn_siguiente
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(773, 189);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 42);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Siguiente";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_siguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_siguiente.Location = new System.Drawing.Point(773, 189);
+            this.btn_siguiente.Name = "btn_siguiente";
+            this.btn_siguiente.Size = new System.Drawing.Size(195, 42);
+            this.btn_siguiente.TabIndex = 7;
+            this.btn_siguiente.Text = "Siguiente";
+            this.btn_siguiente.UseVisualStyleBackColor = true;
+            this.btn_siguiente.Click += new System.EventHandler(this.btn_siguiente_Click);
             // 
             // groupBox1
             // 
@@ -167,23 +168,24 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "Confirmar Contraseña";
             // 
-            // btn_cerrar
+            // btn_atras
             // 
-            this.btn_cerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cerrar.Location = new System.Drawing.Point(773, 237);
-            this.btn_cerrar.Name = "btn_cerrar";
-            this.btn_cerrar.Size = new System.Drawing.Size(195, 42);
-            this.btn_cerrar.TabIndex = 8;
-            this.btn_cerrar.Text = "Cerrar";
-            this.btn_cerrar.UseVisualStyleBackColor = true;
+            this.btn_atras.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_atras.Location = new System.Drawing.Point(773, 237);
+            this.btn_atras.Name = "btn_atras";
+            this.btn_atras.Size = new System.Drawing.Size(195, 42);
+            this.btn_atras.TabIndex = 8;
+            this.btn_atras.Text = "Atras";
+            this.btn_atras.UseVisualStyleBackColor = true;
+            this.btn_atras.Click += new System.EventHandler(this.btn_cerrar_Click);
             // 
             // Registrarse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(993, 308);
-            this.Controls.Add(this.btn_cerrar);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_atras);
+            this.Controls.Add(this.btn_siguiente);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Registrarse";
@@ -196,7 +198,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_siguiente;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
@@ -209,6 +211,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btn_cerrar;
+        private System.Windows.Forms.Button btn_atras;
     }
 }
