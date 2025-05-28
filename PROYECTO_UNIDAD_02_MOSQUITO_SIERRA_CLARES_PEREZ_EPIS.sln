@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS", "PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS\PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.csproj", "{DF80F548-E98A-4D5A-9E2E-15E0EF5308ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF80F548-E98A-4D5A-9E2E-15E0EF5308ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF80F548-E98A-4D5A-9E2E-15E0EF5308ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF80F548-E98A-4D5A-9E2E-15E0EF5308ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF80F548-E98A-4D5A-9E2E-15E0EF5308ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65030750-0918-4566-A69A-DCE013900AB0}
+	EndGlobalSection
+EndGlobal
