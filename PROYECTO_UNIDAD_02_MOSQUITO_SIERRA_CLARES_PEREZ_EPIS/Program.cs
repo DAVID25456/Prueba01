@@ -16,7 +16,7 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Usuario.Usuario());
+            Application.Run(new Usuario.InicioSecion());
         }
     }
 }
