@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Clases;
 
 namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Usuario
 {
     public partial class InicioSecion : Form
     {
+        //Instanciar la clase Usuario
+        Clases.Usuario objusuario = new Clases.Usuario();
+
         string email, contraseña;
         
         public InicioSecion()
