@@ -39,8 +39,8 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Cliente
 
             var nuevousuario = new Usuario
             {
-                
-            }
+                Nombres = txtnombre.Text,
+            };
         }
     }
 }
