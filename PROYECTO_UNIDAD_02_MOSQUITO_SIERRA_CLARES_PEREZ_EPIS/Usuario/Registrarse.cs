@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Clases;
 
 namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Usuario
 {
@@ -24,6 +25,11 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Usuario
             //this.SuspendLayout();
             this.Hide();
             inicioSecion.Show();
+        }
+
+        private void btn_registrarse_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

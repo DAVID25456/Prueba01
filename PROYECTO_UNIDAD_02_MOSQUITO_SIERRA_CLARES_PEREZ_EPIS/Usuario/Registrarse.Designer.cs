@@ -293,6 +293,7 @@
             this.btn_registrarse.TabIndex = 10;
             this.btn_registrarse.Text = "Registrarse";
             this.btn_registrarse.UseVisualStyleBackColor = true;
+            this.btn_registrarse.Click += new System.EventHandler(this.btn_registrarse_Click);
             // 
             // rbt_hombre
             // 

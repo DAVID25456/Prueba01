@@ -15,13 +15,10 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Usuario
     {
         //Instanciar la clase Usuario
         Clases.Usuario objusuario = new Clases.Usuario();
-
-        string email, contraseña;
         
         public InicioSecion()
         {
             InitializeComponent();
-
         }
 
         private void btn_registro_Click(object sender, EventArgs e)
@@ -41,18 +38,36 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Usuario
 
         private void btn_inicio_s_Click(object sender, EventArgs e)
         {
-            email = txt_email.Text;
-            contraseña = txt_contraseña.Text;
+            //Verificar Si el Email existe en la base de datos
+            //Verificar si la contraseña es correspondiente al email de la base de datos
 
-            //Pruebas
+            //TRIM: Quita los espacios finales e iniciales
+            string email = txt_email.Text.Trim();
+            string contraseña = txt_contraseña.Text;
 
-            if (email.Equals("123"))
+            //Verificar si no esta vacio el TextBox Email
+            if (string.IsNullOrEmpty(email))
             {
-                if (contraseña.Equals("123"))
-                {
-                    MessageBox.Show("OK");
-                }
+                MessageBox.Show("Ingrese su Email", "Espacio en blanco", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            //Verificar si no esta vacio el TextBox contraseña
+            if (string.IsNullOrEmpty(contraseña))
+            {
+                MessageBox.Show("Ingrese su Email", "Espacio en blanco", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            //Para verificar si se conecta correctamente a la base de datos
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
         }
     }
 }
