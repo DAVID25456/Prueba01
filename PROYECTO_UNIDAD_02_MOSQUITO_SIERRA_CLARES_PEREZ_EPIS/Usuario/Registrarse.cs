@@ -25,14 +25,5 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Usuario
             this.Hide();
             inicioSecion.Show();
         }
-
-        private void btn_siguiente_Click(object sender, EventArgs e)
-        {
-            //Ir al formulario de datos personales
-            Informacion_personal informacion_Personal = new Informacion_personal();
-            //this.SuspendLayout();
-            this.Hide();
-            informacion_Personal.Show();
-        }
     }
 }
