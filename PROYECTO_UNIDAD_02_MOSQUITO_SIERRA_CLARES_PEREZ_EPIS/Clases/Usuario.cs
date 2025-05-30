@@ -51,10 +51,9 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Clases
         public string Ciudad { get; set; }
 
 
-        //Metodos de la clase Usuario
+        //Metodos
 
         //Metodo que verifica si el usuario existe
-
         public bool VerificarUsuario(string email, string contraseña)
         {
             //Definir el origen de fuente de datos
@@ -62,6 +61,24 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Clases
             {
                 var usuario = bd.Usuario.FirstOrDefault(u => u.Email == email && u.Contraseña == contraseña);
                 return usuario != null; //Si existe retorna TRUE, caso contrario FALSE
+            }
+        }
+
+        //Metodo para ingresar datos
+        public bool IngresarDatos(Usuario nuevousuario)
+        {
+            try
+            {
+                using (var bd = new Model1())
+                {
+                    bd.Usuario.Add(nuevousuario);
+                    bd.SaveChanges();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
             }
         }
     }

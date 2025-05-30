@@ -20,6 +20,7 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Cliente
         public InicioSecion()
         {
             InitializeComponent();
+            lb_aviso.Visible = false;
         }
 
         private void btn_registro_Click(object sender, EventArgs e)
@@ -58,11 +59,15 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Cliente
                 MessageBox.Show("Ingrese su Contraseña", "Espacio en blanco", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+            //Verificar si el usuario existe
             if (objusuario.VerificarUsuario(email,contraseña))
             {
                 MessageBox.Show("Benvenido", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
+            else
+            {
+                lb_aviso.Visible = true;
+            }
         }
     }
 }

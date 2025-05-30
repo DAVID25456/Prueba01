@@ -37,7 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_inicio_s = new System.Windows.Forms.Button();
             this.btn_registro = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lb_aviso = new System.Windows.Forms.Label();
             this.btn_salir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -122,14 +122,15 @@
             this.btn_registro.UseVisualStyleBackColor = true;
             this.btn_registro.Click += new System.EventHandler(this.btn_registro_Click);
             // 
-            // label3
+            // lb_aviso
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 480);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Avisar si la cuenta no existe";
+            this.lb_aviso.AutoSize = true;
+            this.lb_aviso.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_aviso.Location = new System.Drawing.Point(20, 483);
+            this.lb_aviso.Name = "lb_aviso";
+            this.lb_aviso.Size = new System.Drawing.Size(218, 29);
+            this.lb_aviso.TabIndex = 4;
+            this.lb_aviso.Text = "La cuenta no existe";
             // 
             // btn_salir
             // 
@@ -148,7 +149,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(588, 551);
             this.Controls.Add(this.btn_salir);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lb_aviso);
             this.Controls.Add(this.btn_registro);
             this.Controls.Add(this.btn_inicio_s);
             this.Controls.Add(this.groupBox1);
@@ -173,7 +174,7 @@
         private System.Windows.Forms.TextBox txt_contraseña;
         private System.Windows.Forms.Button btn_inicio_s;
         private System.Windows.Forms.Button btn_registro;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lb_aviso;
         private System.Windows.Forms.Button btn_salir;
     }
 }

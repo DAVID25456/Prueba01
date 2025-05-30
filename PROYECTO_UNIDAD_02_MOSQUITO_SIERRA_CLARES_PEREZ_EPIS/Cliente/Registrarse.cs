@@ -13,6 +13,9 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Cliente
 {
     public partial class Registrarse : Form
     {
+        //Instanciar la clase Usuario
+        Usuario objusuario = new Usuario();
+
         public Registrarse()
         {
             InitializeComponent();
@@ -29,7 +32,15 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Cliente
 
         private void btn_registrarse_Click(object sender, EventArgs e)
         {
+            if (txtcontraseña.Text != txtconfirmar.Text)
+            {
+                MessageBox.Show("Las contraseñas no coinciden", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
+            var nuevousuario = new Usuario
+            {
+                
+            }
         }
     }
 }

@@ -30,17 +30,19 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtconfirmar = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtcontraseña = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
+            this.txtapellido = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_atras = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rbt_mujer = new System.Windows.Forms.RadioButton();
+            this.rbt_hombre = new System.Windows.Forms.RadioButton();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -53,8 +55,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btn_registrarse = new System.Windows.Forms.Button();
-            this.rbt_hombre = new System.Windows.Forms.RadioButton();
-            this.rbt_mujer = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -62,13 +62,13 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.txtconfirmar);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txtcontraseña);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtemail);
+            this.groupBox1.Controls.Add(this.txtapellido);
+            this.groupBox1.Controls.Add(this.txtnombre);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -88,12 +88,12 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "Confirmar Contraseña";
             // 
-            // textBox5
+            // txtconfirmar
             // 
-            this.textBox5.Location = new System.Drawing.Point(412, 216);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(328, 35);
-            this.textBox5.TabIndex = 8;
+            this.txtconfirmar.Location = new System.Drawing.Point(412, 216);
+            this.txtconfirmar.Name = "txtconfirmar";
+            this.txtconfirmar.Size = new System.Drawing.Size(328, 35);
+            this.txtconfirmar.TabIndex = 8;
             // 
             // label5
             // 
@@ -104,12 +104,12 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Contraseña";
             // 
-            // textBox4
+            // txtcontraseña
             // 
-            this.textBox4.Location = new System.Drawing.Point(412, 174);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(328, 35);
-            this.textBox4.TabIndex = 6;
+            this.txtcontraseña.Location = new System.Drawing.Point(412, 174);
+            this.txtcontraseña.Name = "txtcontraseña";
+            this.txtcontraseña.Size = new System.Drawing.Size(328, 35);
+            this.txtcontraseña.TabIndex = 6;
             // 
             // label4
             // 
@@ -120,26 +120,26 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Email";
             // 
-            // textBox3
+            // txtemail
             // 
-            this.textBox3.Location = new System.Drawing.Point(412, 132);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(328, 35);
-            this.textBox3.TabIndex = 4;
+            this.txtemail.Location = new System.Drawing.Point(412, 132);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(328, 35);
+            this.txtemail.TabIndex = 4;
             // 
-            // textBox2
+            // txtapellido
             // 
-            this.textBox2.Location = new System.Drawing.Point(412, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(328, 35);
-            this.textBox2.TabIndex = 3;
+            this.txtapellido.Location = new System.Drawing.Point(412, 90);
+            this.txtapellido.Name = "txtapellido";
+            this.txtapellido.Size = new System.Drawing.Size(328, 35);
+            this.txtapellido.TabIndex = 3;
             // 
-            // textBox1
+            // txtnombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(412, 48);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(328, 35);
-            this.textBox1.TabIndex = 2;
+            this.txtnombre.Location = new System.Drawing.Point(412, 48);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(328, 35);
+            this.txtnombre.TabIndex = 2;
             // 
             // label2
             // 
@@ -192,6 +192,28 @@
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informacion personal";
+            // 
+            // rbt_mujer
+            // 
+            this.rbt_mujer.AutoSize = true;
+            this.rbt_mujer.Location = new System.Drawing.Point(573, 172);
+            this.rbt_mujer.Name = "rbt_mujer";
+            this.rbt_mujer.Size = new System.Drawing.Size(113, 33);
+            this.rbt_mujer.TabIndex = 19;
+            this.rbt_mujer.TabStop = true;
+            this.rbt_mujer.Text = "MUJER";
+            this.rbt_mujer.UseVisualStyleBackColor = true;
+            // 
+            // rbt_hombre
+            // 
+            this.rbt_hombre.AutoSize = true;
+            this.rbt_hombre.Location = new System.Drawing.Point(345, 172);
+            this.rbt_hombre.Name = "rbt_hombre";
+            this.rbt_hombre.Size = new System.Drawing.Size(136, 33);
+            this.rbt_hombre.TabIndex = 18;
+            this.rbt_hombre.TabStop = true;
+            this.rbt_hombre.Text = "HOMBRE";
+            this.rbt_hombre.UseVisualStyleBackColor = true;
             // 
             // comboBox2
             // 
@@ -295,28 +317,6 @@
             this.btn_registrarse.UseVisualStyleBackColor = true;
             this.btn_registrarse.Click += new System.EventHandler(this.btn_registrarse_Click);
             // 
-            // rbt_hombre
-            // 
-            this.rbt_hombre.AutoSize = true;
-            this.rbt_hombre.Location = new System.Drawing.Point(345, 172);
-            this.rbt_hombre.Name = "rbt_hombre";
-            this.rbt_hombre.Size = new System.Drawing.Size(136, 33);
-            this.rbt_hombre.TabIndex = 18;
-            this.rbt_hombre.TabStop = true;
-            this.rbt_hombre.Text = "HOMBRE";
-            this.rbt_hombre.UseVisualStyleBackColor = true;
-            // 
-            // rbt_mujer
-            // 
-            this.rbt_mujer.AutoSize = true;
-            this.rbt_mujer.Location = new System.Drawing.Point(573, 172);
-            this.rbt_mujer.Name = "rbt_mujer";
-            this.rbt_mujer.Size = new System.Drawing.Size(113, 33);
-            this.rbt_mujer.TabIndex = 19;
-            this.rbt_mujer.TabStop = true;
-            this.rbt_mujer.Text = "MUJER";
-            this.rbt_mujer.UseVisualStyleBackColor = true;
-            // 
             // Registrarse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -338,15 +338,15 @@
 
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtapellido;
+        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtconfirmar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtcontraseña;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_atras;
         private System.Windows.Forms.GroupBox groupBox2;
