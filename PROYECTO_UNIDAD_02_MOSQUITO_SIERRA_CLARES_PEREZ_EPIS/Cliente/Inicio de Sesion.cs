@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -9,12 +10,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Clases;
 
-namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Usuario
+namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Cliente
 {
     public partial class InicioSecion : Form
     {
         //Instanciar la clase Usuario
-        Clases.Usuario objusuario = new Clases.Usuario();
+        Usuario objusuario = new Usuario();
         
         public InicioSecion()
         {
@@ -54,18 +55,12 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Usuario
             //Verificar si no esta vacio el TextBox contraseña
             if (string.IsNullOrEmpty(contraseña))
             {
-                MessageBox.Show("Ingrese su Email", "Espacio en blanco", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ingrese su Contraseña", "Espacio en blanco", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            //Para verificar si se conecta correctamente a la base de datos
-            try
+            if (objusuario.VerificarUsuario(email,contraseña))
             {
-
-            }
-            catch (Exception)
-            {
-
-                throw;
+                MessageBox.Show("Benvenido", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
         }

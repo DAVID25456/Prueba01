@@ -5,6 +5,8 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Clases
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
+    using System.Linq;
+    using System.Runtime.Remoting.Contexts;
 
     [Table("Usuario")]
     public partial class Usuario
@@ -47,5 +49,20 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Clases
 
         [StringLength(50)]
         public string Ciudad { get; set; }
+
+
+        //Metodos de la clase Usuario
+
+        //Metodo que verifica si el usuario existe
+
+        public bool VerificarUsuario(string email, string contraseña)
+        {
+            //Definir el origen de fuente de datos
+            using (var bd = new Model1())
+            {
+                var usuario = bd.Usuario.FirstOrDefault(u => u.Email == email && u.Contraseña == contraseña);
+                return usuario != null; //Si existe retorna TRUE, caso contrario FALSE
+            }
+        }
     }
 }
