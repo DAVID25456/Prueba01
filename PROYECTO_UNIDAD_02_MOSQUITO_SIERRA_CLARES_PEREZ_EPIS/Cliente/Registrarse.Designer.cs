@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registrarse));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtconfirmar = new System.Windows.Forms.TextBox();
@@ -43,15 +44,15 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rbt_mujer = new System.Windows.Forms.RadioButton();
             this.rbt_hombre = new System.Windows.Forms.RadioButton();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbciudad = new System.Windows.Forms.ComboBox();
+            this.cmbpais = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpnacimiento = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.txt_contraseña = new System.Windows.Forms.TextBox();
-            this.txt_email = new System.Windows.Forms.TextBox();
+            this.txttelefono = new System.Windows.Forms.TextBox();
+            this.txtdni = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btn_registrarse = new System.Windows.Forms.Button();
@@ -162,6 +163,8 @@
             // btn_atras
             // 
             this.btn_atras.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_atras.Image = ((System.Drawing.Image)(resources.GetObject("btn_atras.Image")));
+            this.btn_atras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_atras.Location = new System.Drawing.Point(12, 628);
             this.btn_atras.Name = "btn_atras";
             this.btn_atras.Size = new System.Drawing.Size(195, 42);
@@ -174,15 +177,15 @@
             // 
             this.groupBox2.Controls.Add(this.rbt_mujer);
             this.groupBox2.Controls.Add(this.rbt_hombre);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.cmbciudad);
+            this.groupBox2.Controls.Add(this.cmbpais);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
+            this.groupBox2.Controls.Add(this.dtpnacimiento);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.txt_contraseña);
-            this.groupBox2.Controls.Add(this.txt_email);
+            this.groupBox2.Controls.Add(this.txttelefono);
+            this.groupBox2.Controls.Add(this.txtdni);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -215,21 +218,21 @@
             this.rbt_hombre.Text = "HOMBRE";
             this.rbt_hombre.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
+            // cmbciudad
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(289, 258);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(451, 37);
-            this.comboBox2.TabIndex = 17;
+            this.cmbciudad.FormattingEnabled = true;
+            this.cmbciudad.Location = new System.Drawing.Point(289, 258);
+            this.cmbciudad.Name = "cmbciudad";
+            this.cmbciudad.Size = new System.Drawing.Size(451, 37);
+            this.cmbciudad.TabIndex = 17;
             // 
-            // comboBox1
+            // cmbpais
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(289, 215);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(451, 37);
-            this.comboBox1.TabIndex = 16;
+            this.cmbpais.FormattingEnabled = true;
+            this.cmbpais.Location = new System.Drawing.Point(289, 215);
+            this.cmbpais.Name = "cmbpais";
+            this.cmbpais.Size = new System.Drawing.Size(451, 37);
+            this.cmbpais.TabIndex = 16;
             // 
             // label7
             // 
@@ -258,12 +261,12 @@
             this.label8.TabIndex = 12;
             this.label8.Text = "Genero";
             // 
-            // dateTimePicker1
+            // dtpnacimiento
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(289, 126);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(451, 35);
-            this.dateTimePicker1.TabIndex = 11;
+            this.dtpnacimiento.Location = new System.Drawing.Point(289, 126);
+            this.dtpnacimiento.Name = "dtpnacimiento";
+            this.dtpnacimiento.Size = new System.Drawing.Size(451, 35);
+            this.dtpnacimiento.TabIndex = 11;
             // 
             // label9
             // 
@@ -274,19 +277,19 @@
             this.label9.TabIndex = 4;
             this.label9.Text = "Fecha de nacimiento";
             // 
-            // txt_contraseña
+            // txttelefono
             // 
-            this.txt_contraseña.Location = new System.Drawing.Point(289, 85);
-            this.txt_contraseña.Name = "txt_contraseña";
-            this.txt_contraseña.Size = new System.Drawing.Size(451, 35);
-            this.txt_contraseña.TabIndex = 3;
+            this.txttelefono.Location = new System.Drawing.Point(289, 85);
+            this.txttelefono.Name = "txttelefono";
+            this.txttelefono.Size = new System.Drawing.Size(451, 35);
+            this.txttelefono.TabIndex = 3;
             // 
-            // txt_email
+            // txtdni
             // 
-            this.txt_email.Location = new System.Drawing.Point(289, 44);
-            this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(451, 35);
-            this.txt_email.TabIndex = 2;
+            this.txtdni.Location = new System.Drawing.Point(289, 44);
+            this.txtdni.Name = "txtdni";
+            this.txtdni.Size = new System.Drawing.Size(451, 35);
+            this.txtdni.TabIndex = 2;
             // 
             // label10
             // 
@@ -309,11 +312,14 @@
             // btn_registrarse
             // 
             this.btn_registrarse.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_registrarse.Image = ((System.Drawing.Image)(resources.GetObject("btn_registrarse.Image")));
+            this.btn_registrarse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_registrarse.Location = new System.Drawing.Point(588, 628);
             this.btn_registrarse.Name = "btn_registrarse";
             this.btn_registrarse.Size = new System.Drawing.Size(195, 42);
             this.btn_registrarse.TabIndex = 10;
             this.btn_registrarse.Text = "Registrarse";
+            this.btn_registrarse.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_registrarse.UseVisualStyleBackColor = true;
             this.btn_registrarse.Click += new System.EventHandler(this.btn_registrarse_Click);
             // 
@@ -350,15 +356,15 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_atras;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbciudad;
+        private System.Windows.Forms.ComboBox cmbpais;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpnacimiento;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txt_contraseña;
-        private System.Windows.Forms.TextBox txt_email;
+        private System.Windows.Forms.TextBox txttelefono;
+        private System.Windows.Forms.TextBox txtdni;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btn_registrarse;

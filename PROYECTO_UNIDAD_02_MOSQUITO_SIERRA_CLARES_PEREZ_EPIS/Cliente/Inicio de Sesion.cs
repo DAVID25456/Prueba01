@@ -51,22 +51,24 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Cliente
             if (string.IsNullOrEmpty(email))
             {
                 MessageBox.Show("Ingrese su Email", "Espacio en blanco", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
             //Verificar si no esta vacio el TextBox contraseña
             if (string.IsNullOrEmpty(contraseña))
             {
                 MessageBox.Show("Ingrese su Contraseña", "Espacio en blanco", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
             //Verificar si el usuario existe
             if (objusuario.VerificarUsuario(email,contraseña))
             {
-                MessageBox.Show("Benvenido", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bienvenido", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                lb_aviso.Visible = true;
+                MessageBox.Show("La cuenta no existe", "Incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

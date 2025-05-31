@@ -103,22 +103,28 @@
             // btn_inicio_s
             // 
             this.btn_inicio_s.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_inicio_s.Image = ((System.Drawing.Image)(resources.GetObject("btn_inicio_s.Image")));
+            this.btn_inicio_s.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_inicio_s.Location = new System.Drawing.Point(25, 422);
             this.btn_inicio_s.Name = "btn_inicio_s";
             this.btn_inicio_s.Size = new System.Drawing.Size(195, 42);
             this.btn_inicio_s.TabIndex = 2;
             this.btn_inicio_s.Text = "Iniciar Sesion";
+            this.btn_inicio_s.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_inicio_s.UseVisualStyleBackColor = true;
             this.btn_inicio_s.Click += new System.EventHandler(this.btn_inicio_s_Click);
             // 
             // btn_registro
             // 
             this.btn_registro.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_registro.Image = ((System.Drawing.Image)(resources.GetObject("btn_registro.Image")));
+            this.btn_registro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_registro.Location = new System.Drawing.Point(372, 422);
             this.btn_registro.Name = "btn_registro";
             this.btn_registro.Size = new System.Drawing.Size(195, 42);
             this.btn_registro.TabIndex = 3;
             this.btn_registro.Text = "Registrarse";
+            this.btn_registro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_registro.UseVisualStyleBackColor = true;
             this.btn_registro.Click += new System.EventHandler(this.btn_registro_Click);
             // 
