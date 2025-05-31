@@ -52,6 +52,7 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Cliente
 
             var nuevousuario = new Usuario
             {
+                //IdUsuario
                 Nombres = txtnombre.Text,
                 Apellidos = txtapellido.Text,
                 Email = txtemail.Text,
@@ -60,17 +61,19 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Cliente
                 Telefono = txttelefono.Text,
                 FechaNacimiento = dtpnacimiento.Value,
                 Genero = genero,
-
+                Pais = cmbpais.SelectedItem?.ToString(),
+                Ciudad = cmbciudad.SelectedItem?.ToString()
             };
 
             //Insertar nuevo usuario a la base de datos
             if (objusuario.IngresarDatos(nuevousuario))
             {
                 MessageBox.Show("Registro exitoso");
+                Limpiarelementos();
             }
             else
             {
-
+                MessageBox.Show("Error al registrar nuevo usuario");
             }
         }
 
@@ -81,8 +84,14 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Cliente
             txtemail.Text = string.Empty;
             txtcontraseña.Text = string.Empty; 
             txtconfirmar.Text = string.Empty;
-            txttelefono.Text = string.Empty;
 
+            txtdni.Text = string.Empty;
+            txttelefono.Text = string.Empty;
+            dtpnacimiento = null;
+            rbt_hombre.Checked = false;
+            rbt_mujer.Checked = false;
+            cmbpais.Items.Clear();
+            cmbciudad.Items.Clear();
         }
 
         private string GeneroSelecionado()

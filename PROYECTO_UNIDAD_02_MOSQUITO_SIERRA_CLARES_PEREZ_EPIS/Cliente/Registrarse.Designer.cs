@@ -221,6 +221,37 @@
             // cmbciudad
             // 
             this.cmbciudad.FormattingEnabled = true;
+            this.cmbciudad.Items.AddRange(new object[] {
+            "Buenos Aires",
+            "Córdoba",
+            "Rosario",
+            "Mendoza",
+            "La Plata",
+            "Ciudad de México",
+            "Guadalajara",
+            "Monterrey",
+            "Puebla",
+            "Tijuana",
+            "Bogotá",
+            "Medellín",
+            "Cali",
+            "Barranquilla",
+            "Cartagena",
+            "Madrid",
+            "Barcelona",
+            "Valencia",
+            "Sevilla",
+            "Zaragoza",
+            "Nueva York",
+            "Los Ángeles",
+            "Chicago",
+            "Houston",
+            "Miami",
+            "Lima",
+            "Arequipa",
+            "Trujillo",
+            "Chiclayo",
+            "Cusco"});
             this.cmbciudad.Location = new System.Drawing.Point(289, 258);
             this.cmbciudad.Name = "cmbciudad";
             this.cmbciudad.Size = new System.Drawing.Size(451, 37);
@@ -229,6 +260,28 @@
             // cmbpais
             // 
             this.cmbpais.FormattingEnabled = true;
+            this.cmbpais.Items.AddRange(new object[] {
+            "Argentina",
+            "Bolivia",
+            "Brasil",
+            "Canadá",
+            "Chile",
+            "Colombia",
+            "Costa Rica",
+            "Ecuador",
+            "El Salvador",
+            "España",
+            "Estados Unidos",
+            "Guatemala",
+            "Honduras",
+            "México",
+            "Panamá",
+            "Paraguay",
+            "Perú",
+            "Puerto Rico",
+            "República Dominicana",
+            "Uruguay",
+            "Venezuela"});
             this.cmbpais.Location = new System.Drawing.Point(289, 215);
             this.cmbpais.Name = "cmbpais";
             this.cmbpais.Size = new System.Drawing.Size(451, 37);
