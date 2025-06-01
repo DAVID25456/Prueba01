@@ -6,7 +6,6 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Clases
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
     using System.Linq;
-    using System.Runtime.Remoting.Contexts;
     using System.Windows.Forms;
 
     [Table("Usuario")]
@@ -51,7 +50,6 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Clases
         [StringLength(50)]
         public string Ciudad { get; set; }
 
-
         //Metodos
 
         //Metodo que verifica si el usuario existe
@@ -73,7 +71,7 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Clases
                 using (var bd = new Model1())
                 {
                     nuevousuario.IdUsuario = GenerarId();
-                    
+
                     //Verificar si el email ya esta registrado
                     if (bd.Usuario.Any(u => u.Email == nuevousuario.Email))
                     {
@@ -93,7 +91,7 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Clases
                     return true;
                 }
             }
-            catch (Exception )
+            catch (Exception)
             {
                 return false;
             }
