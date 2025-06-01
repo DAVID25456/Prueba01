@@ -22,6 +22,7 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Cliente
 
         //Marco xD
         //Alfin lanchipa
+        //YO LUIS
         Usuario objusuario = new Usuario();
         
         public InicioSecion()
