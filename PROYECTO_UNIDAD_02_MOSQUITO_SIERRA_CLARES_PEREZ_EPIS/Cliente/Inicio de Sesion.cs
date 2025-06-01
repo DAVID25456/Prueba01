@@ -16,6 +16,7 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Cliente
     {
         //Instanciar la clase Usuario
         //Comentario para Marco
+        //Comentario 02
         Usuario objusuario = new Usuario();
         
         public InicioSecion()
