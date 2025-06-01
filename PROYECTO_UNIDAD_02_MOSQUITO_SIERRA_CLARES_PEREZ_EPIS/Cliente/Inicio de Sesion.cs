@@ -26,9 +26,9 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Cliente
         private void btn_registro_Click(object sender, EventArgs e)
         {
             //Salir del formulario actual e ir al formulario de registro
-            Registrarse registrarse = new Registrarse();
+            Registrarse fmrregistrarse = new Registrarse();
             this.Hide();
-            registrarse.Show();
+            fmrregistrarse.Show();
 
         }
 

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -44,9 +45,39 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Cliente
                 return;
             }
 
-            if(string.IsNullOrEmpty(txtnombre.Text) || string.IsNullOrEmpty(txtapellido.Text))
+            if (string.IsNullOrEmpty(txtnombre.Text))
             {
-                MessageBox.Show("Los campos obligatorios deben estar llenos");
+                MessageBox.Show("Ingresar Nombre");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(txtapellido.Text))
+            {
+                MessageBox.Show("Ingresar Apellido");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(txtemail.Text))
+            {
+                MessageBox.Show("Ingresar el email");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(txtcontraseña.Text))
+            {
+                MessageBox.Show("Ingresar la contraseña");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(txtdni.Text))
+            {
+                MessageBox.Show("Ingresar el DNI");
+                return;
+            }
+
+            if (genero == null)
+            {
+                MessageBox.Show("Ingresar el genero");
                 return;
             }
 
@@ -57,12 +88,12 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Cliente
                 Apellidos = txtapellido.Text,
                 Email = txtemail.Text,
                 Contraseña = txtcontraseña.Text,
-                DNI = txtconfirmar.Text,
+                DNI = txtdni.Text,
                 Telefono = txttelefono.Text,
                 FechaNacimiento = dtpnacimiento.Value,
                 Genero = genero,
-                Pais = cmbpais.SelectedItem?.ToString(),
-                Ciudad = cmbciudad.SelectedItem?.ToString()
+                Pais = cmbpais.SelectedItem.ToString(),
+                Ciudad = cmbciudad.SelectedItem.ToString()
             };
 
             //Insertar nuevo usuario a la base de datos
@@ -84,7 +115,6 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Cliente
             txtemail.Text = string.Empty;
             txtcontraseña.Text = string.Empty; 
             txtconfirmar.Text = string.Empty;
-
             txtdni.Text = string.Empty;
             txttelefono.Text = string.Empty;
             dtpnacimiento = null;
@@ -100,7 +130,7 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Cliente
             {
                 return "M";
             }
-            else if (rbt_hombre.Checked)
+            else if (rbt_mujer.Checked)
             {
                 return "F";
             }
