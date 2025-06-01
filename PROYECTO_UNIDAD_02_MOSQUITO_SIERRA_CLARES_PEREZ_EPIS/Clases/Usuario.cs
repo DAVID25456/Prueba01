@@ -7,6 +7,7 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Clases
     using System.Data.Entity.Spatial;
     using System.Linq;
     using System.Runtime.Remoting.Contexts;
+    using System.Windows.Forms;
 
     [Table("Usuario")]
     public partial class Usuario
@@ -71,15 +72,53 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Clases
             {
                 using (var bd = new Model1())
                 {
+                    nuevousuario.IdUsuario = GenerarId();
+                    
+                    //Verificar si el email ya esta registrado
+                    if (bd.Usuario.Any(u => u.Email == nuevousuario.Email))
+                    {
+                        MessageBox.Show("El email ya está registrado");
+                        return false;
+                    }
+
+                    //Verificar si el DNI ya esta registrado
+                    if (bd.Usuario.Any(u => u.DNI == nuevousuario.DNI))
+                    {
+                        MessageBox.Show("El DNI ya está registrado");
+                        return false;
+                    }
+
                     bd.Usuario.Add(nuevousuario);
                     bd.SaveChanges();
                     return true;
                 }
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 return false;
             }
+        }
+
+        public static int GenerarId()
+        {
+            using (var bd = new Model1())
+            {
+                int nuevoID;
+                var idsExistente = bd.Usuario.Select(u => u.IdUsuario).ToList();
+                do
+                {
+                    nuevoID = GenerarNumAleatorio();
+                }
+                while (idsExistente.Equals(nuevoID));
+                return nuevoID;
+            }
+        }
+
+        private static int GenerarNumAleatorio()
+        {
+            Random rnd = new Random();
+            int idaletorio = rnd.Next();
+            return idaletorio;
         }
     }
 }
