@@ -14,6 +14,16 @@ namespace PROYECTO_UNIDAD_02_MOSQUITO_SIERRA_CLARES_PEREZ_EPIS.Cliente
 {
     public partial class InicioSecion : Form
     {
+        //HEAD
+        //Instanciar la clase Usuario
+        //Comentario para Marco
+        //Comentario 02
+
+        //Comentario Luis
+
+        //Marco xD
+        //Alfin lanchipa
+        //YO LUIS
         Usuario objusuario = new Usuario();
         
         public InicioSecion()
